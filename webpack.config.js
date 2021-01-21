@@ -34,6 +34,8 @@ module.exports = [
       // BookReader
       'BookReader.js': './src/js/BookReader.js',
 
+      'HelloWorld.js': './src/js/hello-world.js',
+
       // Plugins (sorted!)
       'plugins/plugin.archive_analytics.js': { import: './src/js/plugins/plugin.archive_analytics.js', dependOn: 'BookReader.js' },
       'plugins/plugin.autoplay.js': { import: './src/js/plugins/plugin.autoplay.js', dependOn: 'BookReader.js' },
