@@ -138,7 +138,7 @@ export class BookNavigator extends LitElement {
    */
   updateMenuContents() {
     const {
-      search, downloads, visualAdjustments, share, bookmarks,
+      search, downloads, visualAdjustments, share, bookmarks = {},
     } = this.menuProviders;
     const menu = [search, visualAdjustments, share, bookmarks];
 
