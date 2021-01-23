@@ -2,15 +2,14 @@ import { html, render } from "lit-html";
 
 import './ItemNavigator/ItemNavigator.js'
 
-// const sampleJson = require('./sample.json');
-// const encJson = {}
-// const encJson = btoa(JSON.stringify(sampleJson))
+const sampleJson = require('./sample.json');
+const encJson = btoa(JSON.stringify(sampleJson))
 
 // // Define a template
 const bookReaderTemplate = () =>
   html `
     <item-navigator     
-      item=""
+      item=${encJson}
       itemType="bookreader" 
       basehost="archive.org" >
       <div id="IABookReaderWrapper" class="internal-beta" slot="bookreader">
